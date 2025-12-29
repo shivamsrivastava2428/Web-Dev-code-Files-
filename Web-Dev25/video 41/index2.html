@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Transition Single Property</title>
+  <style>
+    body { text-align: center; font-family: Arial; }
+    .box {
+      width: 150px;
+      height: 150px;
+      margin: 50px auto;
+      background: lightgreen;
+      border: 2px solid darkgreen;
+      transition: width 3s;
+    }
+    .box:hover {
+      width: 300px;
+      background: tomato; /* this changes instantly */
+    }
+  </style>
+</head>
+<body>
+  <h2>Transition on a Single Property</h2>
+  <div class="box"></div>
+  <p>Hover the box → only <b>width expands gradually</b> in 3s, color changes instantly.</p>
+</body>
+</html>
